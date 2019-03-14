@@ -29,7 +29,7 @@ public class View extends javax.swing.JFrame {
      */
     public View() {
         initComponents();
-        setTitle("Data Mining");
+        setTitle("DATA MINING-165314029");
 
         Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
         int x = layar.width / 2 - this.getSize().width / 2;
@@ -48,37 +48,37 @@ public class View extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
-        jLabel1 = new javax.swing.JLabel();
+        BacaFileExcel = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        ExcelTextField = new javax.swing.JTextField();
+        PilihData = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        TabelExcel = new javax.swing.JTable();
+        Nama = new javax.swing.JLabel();
+        MataKuliah = new javax.swing.JLabel();
+        Tanggal = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel1.setText("BACA FILE EXCEL");
+        BacaFileExcel.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        BacaFileExcel.setText("BACA FILE EXCEL");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        ExcelTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                ExcelTextFieldActionPerformed(evt);
             }
         });
 
-        jButton1.setText("PILIH DATA");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        PilihData.setText("PILIH DATA");
+        PilihData.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                PilihDataActionPerformed(evt);
             }
         });
-        jButton1.addKeyListener(new java.awt.event.KeyAdapter() {
+        PilihData.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                jButton1KeyReleased(evt);
+                PilihDataKeyReleased(evt);
             }
         });
 
@@ -88,9 +88,9 @@ public class View extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ExcelTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(PilihData)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -98,12 +98,12 @@ public class View extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                    .addComponent(jTextField1))
+                    .addComponent(PilihData, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                    .addComponent(ExcelTextField))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        TabelExcel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -114,13 +114,13 @@ public class View extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(TabelExcel);
 
-        jLabel2.setText("HADIYAN FAIKAR - 165314029");
+        Nama.setText("HADIYAN FAIKAR - 165314029");
 
-        jLabel3.setText("DATA MINING");
+        MataKuliah.setText("DATA MINING");
 
-        jLabel4.setText("15/03/2019");
+        Tanggal.setText("15/03/2019");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -137,11 +137,11 @@ public class View extends javax.swing.JFrame {
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 642, Short.MAX_VALUE))
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
+                        .addComponent(MataKuliah)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel4)
+                        .addComponent(Tanggal)
                         .addGap(186, 186, 186)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(Nama, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -152,9 +152,9 @@ public class View extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)))
+                    .addComponent(Nama)
+                    .addComponent(MataKuliah)
+                    .addComponent(Tanggal)))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -168,13 +168,13 @@ public class View extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(BacaFileExcel)
                 .addGap(228, 228, 228))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1)
+                .addComponent(BacaFileExcel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -201,16 +201,16 @@ public class View extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyReleased
+    private void PilihDataKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PilihDataKeyReleased
 
-    }//GEN-LAST:event_jButton1KeyReleased
+    }//GEN-LAST:event_PilihDataKeyReleased
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void ExcelTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExcelTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_ExcelTextFieldActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        File file = new File(jTextField1.getText().toString() + ".xls");
+    private void PilihDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PilihDataActionPerformed
+        File file = new File(ExcelTextField.getText().toString() + ".xls");
 
         if (file.exists()) {
             try {
@@ -230,21 +230,21 @@ public class View extends javax.swing.JFrame {
                     }
                 }
 
-                jTable1.setModel(model);
-                JOptionPane.showMessageDialog(this, "berhasil");
+                TabelExcel.setModel(model);
+                JOptionPane.showMessageDialog(this, "Anda Berhasil Memasukkan File Excel");
 
             } catch (IOException ex) {
-                System.out.println("salah");
+                System.out.println("Salah");
                 Logger.getLogger(View.class.getName()).log(Level.SEVERE, null, ex);
             } catch (BiffException ex) {
-                System.out.println("salah");
+                System.out.println("Salah");
                 Logger.getLogger(View.class.getName()).log(Level.SEVERE, null, ex);
             }
         } else {
             JOptionPane.showMessageDialog(this, "File Tidak Ditemukan");
 
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_PilihDataActionPerformed
 
     /**
      * @param args the command line arguments
@@ -285,17 +285,17 @@ public class View extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel BacaFileExcel;
+    private javax.swing.JTextField ExcelTextField;
+    private javax.swing.JLabel MataKuliah;
+    private javax.swing.JLabel Nama;
+    private javax.swing.JButton PilihData;
+    private javax.swing.JTable TabelExcel;
+    private javax.swing.JLabel Tanggal;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
